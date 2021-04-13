@@ -1,0 +1,2 @@
+// Creates an expo_particles during the direction for the life of the explosion chunk with a slight random offset 
+instance_create_layer(x+random_range(-4, 4), y+random_range(-4, 4), "Effects", o_expo_particle)
