@@ -35,6 +35,7 @@ var _fire_lazer = mouse_check_button_pressed(mb_left);
 // If the mouse is presed as above call the create laxor function
 if (_fire_lazer) {
 
-	fire_lazer();
+	create_left_lazer();
+	create_right_lazer();
 
 }

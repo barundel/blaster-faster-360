@@ -9,4 +9,6 @@ global.highscore = 0;
 
 //Bigger number have priority
 //music object, priority, and iff to loop
-audio_play_sound(a_music, 1, true);
+if (not audio_is_playing(a_music)) {
+	audio_play_sound(a_music, 1, true);
+}
