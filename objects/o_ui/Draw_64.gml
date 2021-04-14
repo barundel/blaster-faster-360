@@ -1,4 +1,6 @@
 
+if (room == r_space) {
+
 #region This grabs the player ships armor and drawrs then updates it on screen. 
 
 var _player_ship = instance_find(object_player_ship, 0);
@@ -32,3 +34,18 @@ draw_text(_score_x + _score_width-4, _score_y+1, score)
 draw_set_halign(fa_left);
 
 #endregion
+
+} else {
+
+#region
+
+var _score_x = room_width - 8;
+var _score_y = 8;
+
+draw_set_halign(fa_right);
+draw_text(_score_x, _score_y, "Highscore: " + string(global.highscore));
+draw_set_halign(fa_left);
+
+#endregion
+
+}

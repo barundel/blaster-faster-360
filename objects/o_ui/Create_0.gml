@@ -4,8 +4,6 @@ draw_set_font(f_1);
 
 //Setting the score vars. 
 score = 0;
-global.highscore = 0;
-
 
 //Bigger number have priority
 //music object, priority, and iff to loop
