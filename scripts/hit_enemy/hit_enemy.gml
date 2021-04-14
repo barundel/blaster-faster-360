@@ -14,5 +14,7 @@ function hit_enemy(){
 	if (other.armor <= 0) {
 		score += _score_amount;
 	}
+	
+	audio_play_sound(a_hit, 8, false);
 
 }
